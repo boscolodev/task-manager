@@ -9,15 +9,16 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserDTO implements Serializable {
 
     private Long id;
     private String name;
     private String email;
+    private String senha;
     private String biografia;
     private String github;
 
